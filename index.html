@@ -1,1 +1,589 @@
-<div>Hello world</div>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andreas Kruchov — Graphic Designer</title>
+  <meta name="description" content="Graphic Designer from Copenhagen crafting brand identities, editorial design, and digital visuals.">
+  <link rel="icon" type="image/x-icon" href="KruchovLogoWhite@4x.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0b0d12] text-white antialiased selection:bg-indigo-500/30 selection:text-white" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol">
+  <!-- Background decorations -->
+  <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-32 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-indigo-600/10 blur-[90px]"></div>
+    <div class="absolute bottom-[-120px] right-[-120px] h-[420px] w-[420px] rounded-full bg-indigo-500/10 blur-[80px]"></div>
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(transparent 1px, #0b0d12 1px); background-size: 28px 28px;"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-black/20 border-b border-white/10">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="flex h-16 items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="group inline-flex items-center gap-3">
+          <div class="h-8 w-8 rounded-md bg-white/5 ring-1 ring-white/10 shadow-sm grid place-items-center transition-all duration-300 ease-out group-hover:ring-indigo-500/40 group-hover:shadow-indigo-500/10">
+            <span class="text-[11px] font-semibold tracking-tight text-white/90">AK</span>
+          </div>
+          <span class="text-sm md:text-base font-medium text-white/80 group-hover:text-white transition-colors duration-300 ease-out tracking-tight">Andreas Kruchov</span>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-1">
+          <a href="#portfolio" class="px-3 py-2 text-sm text-white/70 hover:text-white rounded-md transition-all duration-300 ease-out hover:bg-white/5 hover:ring-1 hover:ring-white/10">Portfolio</a>
+          <a href="#about" class="px-3 py-2 text-sm text-white/70 hover:text-white rounded-md transition-all duration-300 ease-out hover:bg-white/5 hover:ring-1 hover:ring-white/10">About</a>
+          <a href="#experience" class="px-3 py-2 text-sm text-white/70 hover:text-white rounded-md transition-all duration-300 ease-out hover:bg-white/5 hover:ring-1 hover:ring-white/10">Experience</a>
+          <a href="#contact" class="px-3 py-2 text-sm text-white/70 hover:text-white rounded-md transition-all duration-300 ease-out hover:bg-white/5 hover:ring-1 hover:ring-white/10">Contact</a>
+          <a href="CV.pdf" class="px-3 py-2 text-sm text-white/70 hover:text-white rounded-md transition-all duration-300 ease-out hover:bg-white/5 hover:ring-1 hover:ring-white/10">CV</a>
+        </nav>
+
+        <!-- Actions -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="mailto:andreas.lyng.kruchov@gmail.com" class="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5 hover:ring-1 hover:ring-white/10 transition-all duration-300 ease-out">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail h-4 w-4"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+            <span class="hidden sm:inline">Email</span>
+          </a>
+          <a href="#portfolio" class="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm bg-indigo-600/90 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-500/10 ring-1 ring-indigo-400/30 transition-all duration-300 ease-out hover:-translate-y-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right h-4 w-4 -rotate-45"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            View Portfolio
+          </a>
+        </div>
+
+        <!-- Mobile menu -->
+        <details class="md:hidden group relative">
+          <summary class="list-none flex items-center gap-2 px-2 py-2 rounded-md hover:bg-white/5 hover:ring-1 hover:ring-white/10 transition-all duration-300 ease-out cursor-pointer">
+            <span class="sr-only">Open menu</span>
+            <div class="space-y-1.5">
+              <span class="block h-0.5 w-5 bg-white/80 rounded"></span>
+              <span class="block h-0.5 w-4 bg-white/70 rounded"></span>
+              <span class="block h-0.5 w-5 bg-white/60 rounded"></span>
+            </div>
+          </summary>
+          <div class="absolute right-0 mt-3 w-56 rounded-lg bg-[#0f1218] ring-1 ring-white/10 shadow-xl shadow-black/40 p-2 space-y-1 origin-top-right transition-all duration-300 ease-out">
+            <a href="#portfolio" class="block px-3 py-2 text-sm rounded-md text-white/80 hover:text-white hover:bg-white/5">Portfolio</a>
+            <a href="#about" class="block px-3 py-2 text-sm rounded-md text-white/80 hover:text-white hover:bg-white/5">About</a>
+            <a href="#experience" class="block px-3 py-2 text-sm rounded-md text-white/80 hover:text-white hover:bg-white/5">Experience</a>
+            <a href="#contact" class="block px-3 py-2 text-sm rounded-md text-white/80 hover:text-white hover:bg-white/5">Contact</a>
+            <a href="CV.pdf" class="block px-3 py-2 text-sm rounded-md text-white/80 hover:text-white hover:bg-white/5">CV</a>
+            <div class="border-t border-white/10 my-1"></div>
+            <a href="mailto:hello@kruchov.design" class="flex items-center gap-2 px-3 py-2 text-sm rounded-md text-white/80 hover:text-white hover:bg-white/5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail h-4 w-4"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+              Email
+            </a>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="max-w-7xl md:pt-24 mr-auto ml-auto pt-16 pr-6 pb-12 pl-6" id="aura-eme705afr">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-1.5 text-xs text-white/70 shadow-sm transition-all duration-300 ease-out hover:ring-indigo-500/40 hover:bg-white/10">
+            <span class="h-1.5 w-1.5 rounded-full bg-indigo-500 shadow-[0_0_12px] shadow-indigo-500/70"></span>
+            Available for freelance commissions
+          </div>
+          <h1 class="sm:text-5xl md:text-6xl text-3xl font-semibold text-white tracking-normal text-left mt-5" id="aura-eme7051xr">
+            Graphic Designer crafting identities, editorial, and digital visuals.
+          </h1>
+          <p class="mt-5 text-base sm:text-lg text-white/70 max-w-2xl">
+            I help brands stand out with clear, thoughtful design—from logos and typography to print and social. Based in Copenhagen with a love for craft, color, and composition.
+          </p>
+
+          <div class="flex flex-wrap gap-3 mt-8 items-center">
+  <a href="#portfolio" class="inline-flex items-center gap-2 rounded-md px-4 py-2.5 text-sm bg-indigo-600/90 hover:bg-indigo-500 text-white shadow-xl shadow-indigo-500/10 ring-1 ring-indigo-400/30 transition-all duration-300 ease-out hover:-translate-y-0.5">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" class="lucide lucide-sparkles h-4 w-4"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+    Explore Portfolio
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right h-4 w-4 -rotate-45"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+  </a>
+  <a href="#contact" class="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm text-white/70 hover:text-white hover:bg-white/5 ring-1 ring-white/10 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="calendar" class="lucide lucide-calendar h-4 w-4"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+    Contact
+  </a>
+  <a href="CV.pdf" class="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm text-white/70 hover:text-white hover:bg-white/5 ring-1 ring-white/10 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" class="lucide lucide-download h-4 w-4"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+    CV
+  </a>
+  <a href="#about" class="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm text-white/70 hover:text-white hover:bg-white/5 ring-1 ring-white/10 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" class="lucide lucide-user h-4 w-4"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+    About me
+  </a>
+</div>
+
+          <div class="mt-8 grid grid-cols-3 sm:flex sm:flex-wrap gap-x-8 gap-y-3 text-sm text-white/50">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin h-4 w-4"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span class="">Copenhagen, DK · Remote-friendly</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="pen-tool" class="lucide lucide-pen-tool h-4 w-4"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"></path><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"></path><path d="m2.3 2.3 7.286 7.286"></path><circle cx="11" cy="11" r="2"></circle></svg>
+              <span class="">Branding, Editorial, Social</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="palette" class="lucide lucide-palette h-4 w-4"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
+              <span class="">Illustrator, Photoshop, InDesign</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative">
+            <div class="absolute -inset-3 rounded-2xl bg-indigo-500/10 blur-xl"></div>
+            <div class="relative rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-2xl shadow-black/40">
+              <img id="aura-eme705b05" src="https://placehold.co/1887x420?text=Placeholder" alt="Portrait" class="w-full h-[420px] transition-all duration-500 ease-out hover:scale-[1.04] hover:brightness-110 object-cover scale-[1.02]">
+              <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent">
+                <div class="flex items-center gap-3">
+                  <span class="text-sm text-white/80">Andreas Kruchov</span>
+                  <span class="text-xs text-white/50">he/him</span>
+                </div>
+                <div class="mt-2 flex items-center gap-3">
+                  <a href="#" class="inline-flex items-center gap-1.5 text-white/80 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" class="lucide lucide-instagram h-4 w-4"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                    <span class="text-xs">Instagram</span>
+                  </a>
+                  <a href="#" class="inline-flex items-center gap-1.5 text-white/80 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="palette" class="lucide lucide-palette h-4 w-4"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
+                    <span class="text-xs">Behance</span>
+                  </a>
+                  <a href="mailto:hello@kruchov.design" class="inline-flex items-center gap-1.5 text-white/80 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail h-4 w-4"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+                    <span class="text-xs">Email</span>
+                  </a>
+                </div>
+              </div>
+              <div class="absolute top-3 right-3 rounded-full bg-[#0b0d12]/70 backdrop-blur px-2.5 py-1.5 text-[11px] ring-1 ring-white/10 text-white/80 shadow-md">
+                Available for freelance
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="border-t border-white/10">
+    <div class="max-w-7xl md:py-24 mr-auto ml-auto pt-16 pr-6 pb-16 pl-6"><div class="flex gap-6 items-end justify-between">
+        <div class="">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">Selected Projects</h2>
+          <p class="mt-2 text-white/60 max-w-xl">A mix of brand identities, posters, and editorial pieces.</p>
+        </div>
+        <a href="#" class="hidden sm:inline-flex items-center gap-2 text-sm text-white/80 hover:text-white transition-colors">
+          See full portfolio
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right h-4 w-4"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+        </a>
+      </div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <!-- Project Card -->
+        <a href="#" class="group relative overflow-hidden ring-1 ring-white/10 hover:ring-indigo-500/30 hover:bg-white/[0.05] transition-all duration-500 ease-out shadow-black/30 hover:shadow-indigo-500/10 rounded-xl shadow-lg">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1552308995-2baac1ad5490?q=80&amp;w=1828&amp;auto=format&amp;fit=crop" alt="Identity System" class="h-48 w-full object-cover transition-all duration-500 ease-out group-hover:scale-[1.03] group-hover:blur-[1px]">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
+</div>
+            <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+              <span class="text-[11px] px-2 py-1 rounded-full bg-black/50 ring-1 ring-white/10 text-white/80 backdrop-blur">Brand Identity</span>
+              <span class="text-[11px] ring-1 ring-white/10 text-white/80 bg-black/50 rounded-full pt-1 pr-2 pb-1 pl-2 backdrop-blur">Design</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-start justify-between gap-4">
+              <h3 class="group-hover:text-white text-lg font-medium text-white/90 tracking-tight">Work at Teknika</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right h-4 w-4 text-white/60 group-hover:text-white transition-colors"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </div>
+            <p class="text-sm text-white/60 mt-1.5">Brand identity and design</p><div class="flex gap-3 text-xs text-white/50 mt-3 items-center">
+              <div class="flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="type" class="lucide lucide-type w-[14px] h-[14px]" style="width: 14px; height: 14px; color: rgb(255, 255, 255);"><path d="M12 4v16"></path><path d="M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2"></path><path d="M9 20h6"></path></svg>
+                <span class="">Typography</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="palette" class="lucide lucide-palette h-3.5 w-3.5"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
+                <span class="">Color</span>
+              </div>
+            </div>
+            
+          </div>
+        </a>
+
+        <!-- Project Card (Placeholder) -->
+        <a href="#" class="group relative rounded-xl overflow-hidden ring-1 ring-white/10 hover:ring-indigo-500/30 bg-white/[0.03] hover:bg-white/[0.05] transition-all duration-500 ease-out shadow-lg shadow-black/30 hover:shadow-indigo-500/10">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1629946832022-c327f74956e0?w=2160&amp;q=80" alt="Placeholder" class="h-48 w-full object-cover transition-all duration-500 ease-out group-hover:scale-[1.03] group-hover:blur-[1px]">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+              <span class="text-[11px] px-2 py-1 rounded-full bg-black/50 ring-1 ring-white/10 text-white/80 backdrop-blur">Category</span>
+              <span class="text-[11px] px-2 py-1 rounded-full bg-black/50 ring-1 ring-white/10 text-white/80 backdrop-blur">Tag</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-start justify-between gap-4">
+              <h3 class="text-lg font-medium tracking-tight text-white/90 group-hover:text-white">Lorem Ipsum Project</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right h-4 w-4 text-white/60 group-hover:text-white transition-colors"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </div>
+            <p class="mt-1.5 text-sm text-white/60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in dui vitae urna dapibus placerat.</p>
+            <div class="mt-3 flex items-center gap-3 text-xs text-white/50">
+              <div class="flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="image" class="lucide lucide-image h-3.5 w-3.5"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
+                <span class="">Placeholder</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" class="lucide lucide-sparkles h-3.5 w-3.5"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+                <span>Content</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project Card (Placeholder) -->
+        <a href="#" class="group relative rounded-xl overflow-hidden ring-1 ring-white/10 hover:ring-indigo-500/30 bg-white/[0.03] hover:bg-white/[0.05] transition-all duration-500 ease-out shadow-lg shadow-black/30 hover:shadow-indigo-500/10">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1724525647065-f948fc102e68?w=2160&amp;q=80" alt="Placeholder" class="h-48 w-full object-cover transition-all duration-500 ease-out group-hover:scale-[1.03] group-hover:blur-[1px]">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+              <span class="text-[11px] px-2 py-1 rounded-full bg-black/50 ring-1 ring-white/10 text-white/80 backdrop-blur">Category</span>
+              <span class="text-[11px] px-2 py-1 rounded-full bg-black/50 ring-1 ring-white/10 text-white/80 backdrop-blur">Tag</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-start justify-between gap-4">
+              <h3 class="text-lg font-medium tracking-tight text-white/90 group-hover:text-white">Dolor Sit Amet</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right h-4 w-4 text-white/60 group-hover:text-white transition-colors"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </div>
+            <p class="mt-1.5 text-sm text-white/60">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="mt-3 flex items-center gap-3 text-xs text-white/50">
+              <div class="flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="book-open" class="lucide lucide-book-open h-3.5 w-3.5"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
+                <span>Placeholder</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="type" class="lucide lucide-type h-3.5 w-3.5"><path d="M12 4v16"></path><path d="M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2"></path><path d="M9 20h6"></path></svg>
+                <span class="">Text</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project Card (Placeholder) -->
+        <a href="#" class="group relative rounded-xl overflow-hidden ring-1 ring-white/10 hover:ring-indigo-500/30 bg-white/[0.03] hover:bg-white/[0.05] transition-all duration-500 ease-out shadow-lg shadow-black/30 hover:shadow-indigo-500/10 sm:col-span-2">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1640906152676-dace6710d24b?w=2160&amp;q=80" alt="Placeholder" class="h-56 w-full object-cover transition-all duration-500 ease-out group-hover:scale-[1.03] group-hover:blur-[1px]">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+              <span class="text-[11px] px-2 py-1 rounded-full bg-black/50 ring-1 ring-white/10 text-white/80 backdrop-blur">Category</span>
+              <span class="text-[11px] px-2 py-1 rounded-full bg-black/50 ring-1 ring-white/10 text-white/80 backdrop-blur">Tag</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-start justify-between gap-4">
+              <h3 class="text-lg font-medium tracking-tight text-white/90 group-hover:text-white">Consectetur Placeholder Kit</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 " fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right h-4 w-4 text-white/60 group-hover:text-white transition-colors"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </div>
+            <p class="mt-1.5 text-sm text-white/60">Ut consequat, velit non pharetra luctus, lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="mt-3 flex items-center gap-3 text-xs text-white/50">
+              <div class="flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="monitor-smartphone" class="lucide lucide-monitor-smartphone h-3.5 w-3.5"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"></path><path d="M10 19v-3.96 3.15"></path><path d="M7 19h5"></path><rect width="6" height="10" x="16" y="12" rx="2"></rect></svg>
+                <span>Placeholder</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="palette" class="lucide lucide-palette h-3.5 w-3.5"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>
+                <span>Content</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div></div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="border-t border-white/10">
+    <div class="max-w-7xl md:py-24 mr-auto ml-auto pt-16 pr-6 pb-16 pl-6">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+        <div class="md:col-span-5">
+          <div class="rounded-2xl bg-white/[0.03] ring-1 ring-white/10 p-6 shadow-xl shadow-black/30 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+            <h3 class="text-xl font-semibold tracking-tight">About me</h3>
+            <p class="mt-3 text-white/70 text-sm leading-relaxed">
+              Hey there! I'm Andreas, but you can call me Andy. I'm a graphic design student from and based in Copenhagen, Denmark. I'm 21 years old and want to be a full‑time graphic designer.
+              <br><br>
+              I “suffer” from AuDHD and anxiety—it's been hard, but I’ve learned to adapt and use it as a strength.
+              <br><br>
+              I study Graphic Design at NEXT Education Copenhagen, currently at NEXT's School Education Center in Herlev. Here, I'm searching for brands to find an apprenticeship at and work with. 
+              <br><br>
+              My whole life I've loved playing around in Photoshop, editing videos in Premiere Pro, and being creative in general. In my free time I’m a gamer, tech lover, and an all‑around nerd. I’m inclusive, social, and love building connections.
+            </p>
+            <ul class="mt-5 space-y-2 text-sm text-white/60">
+              <li class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="school" class="lucide lucide-school h-4 w-4 text-indigo-400"><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M18 5v16"></path><path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6"></path><path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11"></path><path d="M6 5v16"></path><circle cx="12" cy="9" r="2"></circle></svg>
+                Graphic Design student · NEXT Education Copenhagen
+              </li>
+              <li class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="briefcase" class="lucide lucide-briefcase h-4 w-4 text-indigo-400"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+                Free for hire · School education
+              </li>
+              <li class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="heart" class="lucide lucide-heart h-4 w-4 text-indigo-400"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg>
+                Inclusive, people‑first collaborator
+              </li>
+            </ul>
+
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="text-xs px-2.5 py-1.5 rounded-full bg-white/5 ring-1 ring-white/10 text-white/70">Illustrator</span>
+              <span class="text-xs px-2.5 py-1.5 rounded-full bg-white/5 ring-1 ring-white/10 text-white/70">Photoshop</span>
+              <span class="text-xs px-2.5 py-1.5 rounded-full bg-white/5 ring-1 ring-white/10 text-white/70">InDesign</span>
+              <span class="text-xs px-2.5 py-1.5 rounded-full bg-white/5 ring-1 ring-white/10 text-white/70">Figma</span>
+              <span class="text-xs px-2.5 py-1.5 rounded-full bg-white/5 ring-1 ring-white/10 text-white/70">Premiere Pro</span>
+              <span class="text-xs px-2.5 py-1.5 rounded-full bg-white/5 ring-1 ring-white/10 text-white/70">After Effects</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-7 space-y-6">
+          <div class="rounded-2xl bg-white/[0.03] ring-1 ring-white/10 p-6 shadow-xl shadow-black/30 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+            <h3 class="text-lg font-medium tracking-tight">What I do</h3>
+            <div class="mt-4 grid sm:grid-cols-2 gap-4">
+              <div class="rounded-xl bg-white/[0.02] ring-1 ring-white/10 p-4 hover:bg-white/[0.04] hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+                <div class="flex items-center gap-2 text-white/80">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="pen-tool" class="lucide lucide-pen-tool h-4 w-4 text-indigo-400"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"></path><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"></path><path d="m2.3 2.3 7.286 7.286"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                  <span class="text-sm font-medium">Brand Identity</span>
+                </div>
+                <p class="mt-2 text-sm text-white/60">Logos, marks, palettes, and cohesive systems across touchpoints.</p>
+              </div>
+              <div class="rounded-xl bg-white/[0.02] ring-1 ring-white/10 p-4 hover:bg-white/[0.04] hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+                <div class="flex items-center gap-2 text-white/80">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="book-open" class="lucide lucide-book-open h-4 w-4 text-indigo-400"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
+                  <span class="text-sm font-medium">Editorial &amp; Print</span>
+                </div>
+                <p class="mt-2 text-sm text-white/60">Magazines, brochures, posters, and print production prep.</p>
+              </div>
+              <div class="rounded-xl bg-white/[0.02] ring-1 ring-white/10 p-4 hover:bg-white/[0.04] hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+                <div class="flex items-center gap-2 text-white/80">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="monitor-smartphone" class="lucide lucide-monitor-smartphone h-4 w-4 text-indigo-400"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"></path><path d="M10 19v-3.96 3.15"></path><path d="M7 19h5"></path><rect width="6" height="10" x="16" y="12" rx="2"></rect></svg>
+                  <span class="text-sm font-medium">Digital &amp; Social</span>
+                </div>
+                <p class="mt-2 text-sm text-white/60">Templates and assets for stories, posts, ads, and simple web design.</p>
+              </div>
+              <div class="rounded-xl bg-white/[0.02] ring-1 ring-white/10 p-4 hover:bg-white/[0.04] hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+                <div class="flex items-center gap-2 text-white/80">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="film" class="lucide lucide-film h-4 w-4 text-indigo-400"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 3v18"></path><path d="M3 7.5h4"></path><path d="M3 12h18"></path><path d="M3 16.5h4"></path><path d="M17 3v18"></path><path d="M17 7.5h4"></path><path d="M17 16.5h4"></path></svg>
+                  <span class="text-sm font-medium">Motion &amp; Video</span>
+                </div>
+                <p class="mt-2 text-sm text-white/60">Short edits, title cards, and subtle motion for digital campaigns.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ring-1 ring-white/10 shadow-black/30 hover:ring-indigo-500/30 transition-all duration-300 ease-out rounded-2xl pt-6 pr-6 pb-6 pl-6 shadow-xl">
+            <h3 class="text-lg font-medium tracking-tight">Tools I love</h3>
+            <div class="flex flex-wrap gap-3 text-sm text-white/70 mt-4"><span class="inline-flex items-center gap-2 rounded-md bg-white/5 ring-1 ring-white/10 px-3 py-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="pen-tool" class="lucide lucide-pen-tool h-4 w-4 text-indigo-400"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"></path><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"></path><path d="m2.3 2.3 7.286 7.286"></path><circle cx="11" cy="11" r="2"></circle></svg> Illustrator
+              </span><span class="inline-flex items-center gap-2 rounded-md bg-white/5 ring-1 ring-white/10 px-3 py-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="image" class="lucide lucide-image h-4 w-4 text-indigo-400"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg> Photoshop
+              </span><span class="inline-flex items-center gap-2 rounded-md bg-white/5 ring-1 ring-white/10 px-3 py-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="book-open" class="lucide lucide-book-open h-4 w-4 text-indigo-400"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg> InDesign
+              </span><span class="inline-flex items-center gap-2 rounded-md bg-white/5 ring-1 ring-white/10 px-3 py-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="shapes" class="lucide lucide-shapes h-4 w-4 text-indigo-400"><path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"></path><rect x="3" y="14" width="7" height="7" rx="1"></rect><circle cx="17.5" cy="17.5" r="3.5"></circle></svg> Figma
+              </span><span class="inline-flex items-center gap-2 rounded-md bg-white/5 ring-1 ring-white/10 px-3 py-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="clapperboard" class="lucide lucide-clapperboard h-4 w-4 text-indigo-400"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"></path><path d="m6.2 5.3 3.1 3.9"></path><path d="m12.4 3.4 3.1 4"></path><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"></path></svg> Premiere Pro
+              </span><span class="inline-flex items-center gap-2 rounded-md bg-white/5 ring-1 ring-white/10 px-3 py-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" class="lucide lucide-sparkles h-4 w-4 text-indigo-400"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg> After Effects
+                </span><span class="inline-flex items-center gap-2 ring-1 ring-white/10 bg-white/5 rounded-md pt-1.5 pr-3 pb-1.5 pl-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="book-open" class="lucide lucide-book-open w-[16px] h-[16px]" style="width: 16px; height: 16px; color: rgb(129, 140, 248);"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg> Fusion360
+              </span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="border-t border-white/10">
+    <div class="max-w-7xl md:py-24 mr-auto ml-auto pt-16 pr-6 pb-16 pl-6">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">Experience</h2>
+      <p class="mt-2 text-white/60 max-w-xl">Recent roles, studies, and collaborations.</p>
+
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Timeline -->
+        <div class="lg:col-span-2">
+          <ol class="relative border-s border-white/10">
+            <li class="ms-6 pb-10">
+              <span class="absolute -start-2.5 flex h-5 w-5 items-center justify-center ring-2 ring-[#0b0d12] bg-indigo-500 rounded-full mt-1.5 shadow-md"></span>
+              <div class="rounded-xl bg-white/[0.03] ring-1 ring-white/10 p-4 shadow-lg shadow-black/30 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-base font-medium tracking-tight">in-house school education</h3>
+                  <span class="text-xs text-white/50">October 2025 - Present</span>
+                </div>
+                <p class="mt-2 text-sm text-white/60">Unfortunately, due to circumstances out of my control, I am no longer in any apprenticeship. I am now in NEXT's In house education center in Herlv</p>
+                <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Skill Maintenance</span>
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Social</span>
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Portfolio Building</span>
+                </div>
+              </div>
+            </li>
+            <li class="ms-6 pb-10">
+              <span class="absolute -start-2.5 flex h-5 w-5 items-center justify-center ring-2 ring-[#0b0d12] bg-indigo-500 rounded-full mt-1.5 shadow-md"></span>
+              <div class="rounded-xl bg-white/[0.03] ring-1 ring-white/10 p-4 shadow-lg shadow-black/30 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-base font-medium tracking-tight">Apprentice Graphic Designer · Teknika, Campus Lyngby</h3>
+                  <span class="text-xs text-white/50">August 2024 — October 2025</span>
+                </div>
+                <p class="mt-2 text-sm text-white/60">Developing new brand from guidelines, signage, and social media posts + videos.</p>
+                <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Print</span>
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Social</span>
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Brand</span>
+                </div>
+              </div>
+            </li>
+            <li class="ms-6 pb-10">
+              <span class="absolute -start-2.5 flex h-5 w-5 items-center justify-center ring-2 ring-[#0b0d12] bg-indigo-500 rounded-full mt-1.5 shadow-md"></span>
+              <div class="rounded-xl bg-white/[0.03] ring-1 ring-white/10 p-4 shadow-lg shadow-black/30 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-base font-medium tracking-tight">Graphic Design Internship - LEMAN</h3>
+                  <span class="text-xs text-white/50">October 2022</span>
+                </div>
+                <p class="mt-2 text-sm text-white/60">2 Week internship making small motion-graphic videos for LEMAN</p>
+                <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Print</span>
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Social</span>
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Brand</span>
+                </div>
+              </div>
+            </li>
+            <li class="ms-6 pb-10">
+              <span class="absolute -start-2.5 mt-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-indigo-500 ring-2 ring-[#0b0d12] shadow-md"></span>
+              <div class="rounded-xl bg-white/[0.03] ring-1 ring-white/10 p-4 shadow-lg shadow-black/30 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-base font-medium tracking-tight">Graphic Design Student · NEXT Education Copenhagen</h3>
+                  <span class="text-xs text-white/50">2022 — Present</span>
+                </div>
+                <p class="mt-2 text-sm text-white/60">Education in 4 overarching subjects. Image manipulation, Typography. Graphical design production, and Graphic Design</p>
+                <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Learning</span>
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Academic</span>
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Social</span>
+                </div>
+              </div>
+            </li>
+            <li class="ms-6">
+              <span class="absolute -start-2.5 mt-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-indigo-500 ring-2 ring-[#0b0d12] shadow-md"></span>
+              <div class="rounded-xl bg-white/[0.03] ring-1 ring-white/10 p-4 shadow-lg shadow-black/30 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-base font-medium tracking-tight">Freelance Designer · Self‑employed</h3>
+                  <span class="text-xs text-white/50">2015 — Present</span>
+                </div>
+                <p class="mt-2 text-sm text-white/60">Logos, posters, video editing, and social assets for small brands and personal projects.</p>
+                <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Logo</span>
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Poster</span>
+                  <span class="px-2 py-1 rounded bg-white/5 ring-1 ring-white/10 text-white/70">Digital</span>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Sidebar card -->
+        <div class="lg:col-span-1">
+          <div class="rounded-2xl bg-white/[0.03] ring-1 ring-white/10 p-6 shadow-xl shadow-black/30 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+            <h4 class="text-base font-medium tracking-tight">Currently</h4>
+            <p class="mt-2 text-sm text-white/70">Actively searching for brands to collaborate with and achieving an apprenticeship.</p>
+            <div class="mt-4 space-y-3 text-sm text-white/70">
+              <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="gamepad-2" class="lucide lucide-gamepad-2 h-4 w-4 text-indigo-400"><line x1="6" x2="10" y1="11" y2="11"></line><line x1="8" x2="8" y1="9" y2="13"></line><line x1="15" x2="15.01" y1="12" y2="12"></line><line x1="18" x2="18.01" y1="10" y2="10"></line><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path></svg>
+                Off-hours: Games &amp; tech tinkering
+              </div>
+            </div>
+            <a href="#contact" class="mt-5 inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm bg-indigo-600/90 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-500/10 ring-1 ring-indigo-400/30 transition-all duration-300 ease-out">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="message-circle" class="lucide lucide-message-circle h-4 w-4"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+              Work together
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="border-t border-white/10">
+    <div class="max-w-7xl md:py-24 mr-auto ml-auto pt-16 pr-6 pb-16 pl-6">
+      <div class="rounded-2xl bg-gradient-to-b from-white/[0.04] to-white/[0.02] ring-1 ring-white/10 p-8 md:p-10 shadow-2xl shadow-black/40">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2">
+            <h3 class="text-2xl md:text-3xl font-semibold tracking-tight">Let’s make something memorable.</h3>
+            <p class="mt-2 text-white/70">Available for brand identity, editorial/print, and digital assets. Open to collaborations and apprenticeships.</p>
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+              <a href="mailto:hello@kruchov.design" class="inline-flex items-center gap-2 rounded-md px-4 py-2.5 text-sm bg-indigo-600/90 hover:bg-indigo-500 text-white shadow-xl shadow-indigo-500/10 ring-1 ring-indigo-400/30 transition-all duration-300 ease-out hover:-translate-y-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="send" class="lucide lucide-send h-4 w-4"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+                Email me
+              </a>
+              <a href="#" class="inline-flex items-center gap-2 rounded-md px-4 py-2.5 text-sm text-white/85 hover:text-white bg-white/5 hover:bg-white/10 ring-1 ring-white/10 hover:ring-white/20 transition-all duration-300 ease-out">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="calendar" class="lucide lucide-calendar h-4 w-4"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                Schedule a call
+              </a>
+            </div>
+          </div>
+          <div class="md:col-span-1">
+            <div class="rounded-xl bg-white/[0.03] ring-1 ring-white/10 p-5 shadow-xl shadow-black/30">
+              <h4 class="text-sm font-medium tracking-tight">Elsewhere</h4>
+              <div class="mt-3 space-y-2 text-sm">
+                <a href="#" class="flex items-center justify-between rounded-md px-3 py-2 bg-white/5 hover:bg-white/10 ring-1 ring-white/10 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+                  <span class="inline-flex items-center gap-2 text-white/80">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" class="lucide lucide-instagram h-4 w-4"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg> Instagram
+                  </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right h-4 w-4 text-white/60"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </a>
+                <a href="#" class="flex items-center justify-between rounded-md px-3 py-2 bg-white/5 hover:bg-white/10 ring-1 ring-white/10 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+                  <span class="inline-flex items-center gap-2 text-white/80">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="palette" class="lucide lucide-palette h-4 w-4"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg> Behance
+                  </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right h-4 w-4 text-white/60"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </a>
+                <a href="#" class="flex items-center justify-between rounded-md px-3 py-2 bg-white/5 hover:bg-white/10 ring-1 ring-white/10 hover:ring-indigo-500/30 transition-all duration-300 ease-out">
+                  <span class="inline-flex items-center gap-2 text-white/80">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="globe" class="lucide lucide-globe h-4 w-4"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg> Portfolio
+                  </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right h-4 w-4 text-white/60"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </a>
+              </div>
+              <p class="mt-4 text-xs text-white/50">Response time within 1–2 business days.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-6 py-10">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="h-7 w-7 rounded-md bg-white/5 ring-1 ring-white/10 grid place-items-center shadow-sm">
+            <span class="text-[10px] font-semibold tracking-tight text-white/90">AK</span>
+          </div>
+          <span class="text-sm text-white/60">© <span id="year">2025</span> Andreas Kruchov. All rights reserved.</span>
+        </div>
+        <nav class="flex items-center gap-2 text-sm">
+          <a href="#portfolio" class="px-2 py-1.5 rounded-md text-white/70 hover:text-white hover:bg-white/5 ring-1 ring-transparent hover:ring-white/10 transition-all duration-300 ease-out">Portfolio</a>
+          <a href="#about" class="px-2 py-1.5 rounded-md text-white/70 hover:text-white hover:bg-white/5 ring-1 ring-transparent hover:ring-white/10 transition-all duration-300 ease-out">About</a>
+          <a href="#experience" class="px-2 py-1.5 rounded-md text-white/70 hover:text-white hover:bg-white/5 ring-1 ring-transparent hover:ring-white/10 transition-all duration-300 ease-out">Experience</a>
+          <a href="#contact" class="px-2 py-1.5 rounded-md text-white/70 hover:text-white hover:bg-white/5 ring-1 ring-transparent hover:ring-white/10 transition-all duration-300 ease-out">Contact</a>
+          <a href="CV.pdf" class="px-2 py-1.5 rounded-md text-white/70 hover:text-white hover:bg-white/5 ring-1 ring-transparent hover:ring-white/10 transition-all duration-300 ease-out">CV</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    if (window && window.lucide) {
+      lucide.createIcons({
+        attrs: { 'stroke-width': 1.5 }
+      });
+    }
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+
+</body></html>
